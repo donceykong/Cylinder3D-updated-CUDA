@@ -141,9 +141,9 @@ if __name__ == '__main__':
     # Training settings
     parser = argparse.ArgumentParser(description='')
     parser.add_argument('-y', '--config_path', default='config/semantickitti.yaml')
-    parser.add_argument('--demo-folder', type=str, default='', help='path to the folder containing demo lidar scans', required=True)
-    parser.add_argument('--save-folder', type=str, default='', help='path to save your result', required=True)
-    parser.add_argument('--demo-label-folder', type=str, default='', help='path to the folder containing demo labels')
+    parser.add_argument('--demo-folder', type=str, default='/media/donceykong/doncey_ssd_02/datasets/SemanticKITTI/dataset/sequences/08/velodyne', help='path to the folder containing demo lidar scans', required=False)
+    parser.add_argument('--save-folder', type=str, default='/media/donceykong/doncey_ssd_02/datasets/SemanticKITTI/dataset/sequences/08/predictions', help='path to save your result', required=False)
+    parser.add_argument('--demo-label-folder', type=str, default='/media/donceykong/doncey_ssd_02/datasets/SemanticKITTI/dataset/sequences/08/labels', help='path to the folder containing demo labels')
     args = parser.parse_args()
 
     print(' '.join(sys.argv))
